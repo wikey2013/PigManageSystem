@@ -52,6 +52,8 @@
             this.systemTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.百度查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +72,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(878, 24);
+            this.menuStrip.Size = new System.Drawing.Size(878, 25);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -80,7 +82,7 @@
             this.PigMenu.Image = ((System.Drawing.Image)(resources.GetObject("PigMenu.Image")));
             this.PigMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.PigMenu.Name = "PigMenu";
-            this.PigMenu.Size = new System.Drawing.Size(81, 20);
+            this.PigMenu.Size = new System.Drawing.Size(84, 21);
             this.PigMenu.Text = "种猪管理";
             this.PigMenu.Click += new System.EventHandler(this.PigMenu_Click);
             // 
@@ -88,7 +90,7 @@
             // 
             this.SellMenu.Image = ((System.Drawing.Image)(resources.GetObject("SellMenu.Image")));
             this.SellMenu.Name = "SellMenu";
-            this.SellMenu.Size = new System.Drawing.Size(81, 20);
+            this.SellMenu.Size = new System.Drawing.Size(84, 21);
             this.SellMenu.Text = "销售管理";
             this.SellMenu.Click += new System.EventHandler(this.SellMenu_Click);
             // 
@@ -96,7 +98,7 @@
             // 
             this.KucunMenu.Image = ((System.Drawing.Image)(resources.GetObject("KucunMenu.Image")));
             this.KucunMenu.Name = "KucunMenu";
-            this.KucunMenu.Size = new System.Drawing.Size(81, 20);
+            this.KucunMenu.Size = new System.Drawing.Size(84, 21);
             this.KucunMenu.Text = "库存管理";
             this.KucunMenu.Click += new System.EventHandler(this.KucunMenu_Click);
             // 
@@ -104,7 +106,7 @@
             // 
             this.MoneyMenu.Image = ((System.Drawing.Image)(resources.GetObject("MoneyMenu.Image")));
             this.MoneyMenu.Name = "MoneyMenu";
-            this.MoneyMenu.Size = new System.Drawing.Size(81, 20);
+            this.MoneyMenu.Size = new System.Drawing.Size(84, 21);
             this.MoneyMenu.Text = "财务管理";
             this.MoneyMenu.Click += new System.EventHandler(this.MoneyMenu_Click);
             // 
@@ -112,7 +114,7 @@
             // 
             this.MemberMenu.Image = ((System.Drawing.Image)(resources.GetObject("MemberMenu.Image")));
             this.MemberMenu.Name = "MemberMenu";
-            this.MemberMenu.Size = new System.Drawing.Size(81, 20);
+            this.MemberMenu.Size = new System.Drawing.Size(84, 21);
             this.MemberMenu.Text = "人员管理";
             this.MemberMenu.Click += new System.EventHandler(this.MemberMenu_Click);
             // 
@@ -120,7 +122,7 @@
             // 
             this.SystemSetingMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SystemSetingMenuItem.Image")));
             this.SystemSetingMenuItem.Name = "SystemSetingMenuItem";
-            this.SystemSetingMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.SystemSetingMenuItem.Size = new System.Drawing.Size(84, 21);
             this.SystemSetingMenuItem.Text = "系统管理";
             this.SystemSetingMenuItem.Click += new System.EventHandler(this.SystemSetingMenuItem_Click);
             // 
@@ -133,42 +135,45 @@
             this.closeAllToolStripMenuItem});
             this.windowsMenu.Image = ((System.Drawing.Image)(resources.GetObject("windowsMenu.Image")));
             this.windowsMenu.Name = "windowsMenu";
-            this.windowsMenu.Size = new System.Drawing.Size(81, 20);
+            this.windowsMenu.Size = new System.Drawing.Size(84, 21);
             this.windowsMenu.Text = "窗口控制";
             // 
             // cascadeToolStripMenuItem
             // 
             this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.cascadeToolStripMenuItem.Text = "层叠(&C)";
             this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.CascadeToolStripMenuItem_Click);
             // 
             // tileVerticalToolStripMenuItem
             // 
             this.tileVerticalToolStripMenuItem.Name = "tileVerticalToolStripMenuItem";
-            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.tileVerticalToolStripMenuItem.Text = "垂直平铺(&V)";
             this.tileVerticalToolStripMenuItem.Click += new System.EventHandler(this.TileVerticalToolStripMenuItem_Click);
             // 
             // tileHorizontalToolStripMenuItem
             // 
             this.tileHorizontalToolStripMenuItem.Name = "tileHorizontalToolStripMenuItem";
-            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.tileHorizontalToolStripMenuItem.Text = "水平平铺(&H)";
             this.tileHorizontalToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontalToolStripMenuItem_Click);
             // 
             // closeAllToolStripMenuItem
             // 
             this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
-            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.closeAllToolStripMenuItem.Text = "全部关闭(&L)";
             this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.CloseAllToolStripMenuItem_Click);
             // 
             // helpMenu
             // 
+            this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.百度查询ToolStripMenuItem,
+            this.关于ToolStripMenuItem});
             this.helpMenu.Image = ((System.Drawing.Image)(resources.GetObject("helpMenu.Image")));
             this.helpMenu.Name = "helpMenu";
-            this.helpMenu.Size = new System.Drawing.Size(75, 20);
+            this.helpMenu.Size = new System.Drawing.Size(77, 21);
             this.helpMenu.Text = "帮助(&H)";
             this.helpMenu.Click += new System.EventHandler(this.helpMenu_Click);
             // 
@@ -207,20 +212,34 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(773, 12);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(528, 17);
             this.toolStripStatusLabel1.Text = "1.01                                                                             " +
-    "                                               ";
+                "                                               ";
             // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(59, 12);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(59, 17);
             this.toolStripStatusLabel3.Text = "系统时间:";
             // 
             // systemTime
             // 
             this.systemTime.Name = "systemTime";
-            this.systemTime.Size = new System.Drawing.Size(0, 0);
+            this.systemTime.Size = new System.Drawing.Size(0, 17);
+            // 
+            // 百度查询ToolStripMenuItem
+            // 
+            this.百度查询ToolStripMenuItem.Name = "百度查询ToolStripMenuItem";
+            this.百度查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.百度查询ToolStripMenuItem.Text = "百度查询";
+            this.百度查询ToolStripMenuItem.Click += new System.EventHandler(this.百度查询ToolStripMenuItem_Click);
+            // 
+            // 关于ToolStripMenuItem
+            // 
+            this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.关于ToolStripMenuItem.Text = "关于";
+            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // MDIParent1
             // 
@@ -269,6 +288,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolUserName;
         private System.Windows.Forms.ToolStripStatusLabel UserNameToolStrip;
         private System.Windows.Forms.ToolStripMenuItem MoneyMenu;
+        private System.Windows.Forms.ToolStripMenuItem 百度查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
     }
 }
 

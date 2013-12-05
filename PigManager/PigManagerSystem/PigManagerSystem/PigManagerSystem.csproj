@@ -56,11 +56,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserControls\LoadingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoadingUserControl.Designer.cs">
+      <DependentUpon>LoadingUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\AboutSystem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\AboutSystem.Designer.cs">
       <DependentUpon>AboutSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddPigInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddPigInfoForm.Designer.cs">
+      <DependentUpon>AddPigInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\KuCunForm.cs">
       <SubType>Form</SubType>
@@ -106,6 +118,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SearchByBaiduForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SearchByBaiduForm.Designer.cs">
+      <DependentUpon>SearchByBaiduForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SellPigForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,8 +139,14 @@
     <Compile Include="Unity\ConfigHelp.cs" />
     <Compile Include="Unity\ComHelp.cs" />
     <Compile Include="Unity\SqlHelper.cs" />
+    <EmbeddedResource Include="UserControls\LoadingUserControl.resx">
+      <DependentUpon>LoadingUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AboutSystem.resx">
       <DependentUpon>AboutSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddPigInfoForm.resx">
+      <DependentUpon>AddPigInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\KuCunForm.resx">
       <DependentUpon>KuCunForm.cs</DependentUpon>
@@ -154,6 +178,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\SearchByBaiduForm.resx">
+      <DependentUpon>SearchByBaiduForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SellPigForm.resx">
       <DependentUpon>SellPigForm.cs</DependentUpon>
     </EmbeddedResource>

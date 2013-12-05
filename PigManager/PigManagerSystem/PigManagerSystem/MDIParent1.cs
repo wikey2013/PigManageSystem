@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using PigManagerSystem.Views;
 
 namespace PigManagerSystem
 {
@@ -39,14 +40,14 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void PigMenu_Click(object sender, EventArgs e)
         {
-            if (pigInfoForm==null)
-            {
+            //if (pigInfoForm==null)
+            //{
                 pigInfoForm = new PigInfoForm();
-            }
-            else
-            {
-                return;
-            }
+            //}
+            //else
+            //{
+            //    return;
+            //}
             pigInfoForm.MdiParent = this;
             pigInfoForm.Show();
         }
@@ -58,14 +59,14 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void SellMenu_Click(object sender, EventArgs e)
         {
-            if (sellPigForm==null)
-            {
+            //if (sellPigForm==null)
+            //{
                 sellPigForm = new SellPigForm();
-            }
-            else
-            {
-                return;
-            }
+            //}
+            //else
+            //{
+            //    return;
+            //}
             sellPigForm.MdiParent = this;
             sellPigForm.Show();
         }
@@ -77,14 +78,14 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void KucunMenu_Click(object sender, EventArgs e)
         {
-            if (kuCunForm==null)
-            {
+            //if (kuCunForm==null)
+            //{
                 kuCunForm = new KuCunForm();
-            }
-            else
-            {
-                return;
-            }
+            //}
+            //else
+            //{
+            //    return;
+            //}
             kuCunForm.MdiParent = this;
             kuCunForm.Show();
         }
@@ -96,14 +97,14 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void MoneyMenu_Click(object sender, EventArgs e)
         {
-            if (moneyForm==null)
-            {
+            //if (moneyForm==null)
+            //{
                 moneyForm = new MoneyForm();
-            }
-            else
-            {
-                return;
-            }
+            //}
+            //else
+            //{
+            //    return;
+            //}
             moneyForm.MdiParent = this;
             moneyForm.Show();
         }
@@ -115,14 +116,14 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void MemberMenu_Click(object sender, EventArgs e)
         {
-            if (memberForm==null)
-            {
+            //if (memberForm==null)
+            //{
                 memberForm = new MemberForm();
-            }
-            else
-            {
-                return;
-            }
+            //}
+            //else
+            //{
+            //    return;
+            //}
             memberForm.MdiParent = this;
             memberForm.Show();
         }
@@ -134,16 +135,16 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void SystemSetingMenuItem_Click(object sender, EventArgs e)
         {
-            if (sysForm==null)
-            {
+            //if (sysForm==null)
+            //{
                 sysForm = new SystemSetingForm();
-            }
-            else
-            {
-                return;
-            }
-            sysForm.MdiParent = this;
-            sysForm.Show();
+            //}
+            //else
+            //{
+            //    return;
+            //}
+           // sysForm.MdiParent = this;
+                sysForm.ShowDialog();
         }
 
         /// <summary>
@@ -153,16 +154,7 @@ namespace PigManagerSystem
         /// <param name="e"></param>
         private void helpMenu_Click(object sender, EventArgs e)
         {
-            if (aboutSsytemForm==null)
-            {
-                aboutSsytemForm = new AboutSystem();
-            }
-            else
-            {
-                return;
-            }
-            aboutSsytemForm.MdiParent = this;
-            aboutSsytemForm.Show();
+            
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -193,6 +185,25 @@ namespace PigManagerSystem
             }
         }
 
-        
+        private void 百度查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchByBaiduForm baiduForm = new SearchByBaiduForm();
+            baiduForm.MdiParent = this;
+            baiduForm.Show();
+        }
+
+        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //if (aboutSsytemForm==null)
+            //{
+            aboutSsytemForm = new AboutSystem();
+            //}
+            //else
+            //{
+            //    return;
+            //}
+            //aboutSsytemForm.MdiParent = this;
+            aboutSsytemForm.ShowDialog();
+        }
     }
 }
