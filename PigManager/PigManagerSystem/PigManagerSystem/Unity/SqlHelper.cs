@@ -15,8 +15,8 @@ namespace PigManagerSystem
 {
     public class SqlHelper
     {
-        //private static string filePath = @"E:\数据库\PigDataBase.accdb";
-        private static string filePath = ConfigHelp.GetDataFileString();
+        private static string filePath = @"E:\数据库\PigDataBase.accdb";
+       // private static string filePath = ConfigHelp.GetDataFileString();
         private static string conStr = "Provider=Microsoft.Ace.OleDb.12.0;" + @"Data Source=" + filePath + ";" + "Persist Security Info=False;";
 
         /// <summary>

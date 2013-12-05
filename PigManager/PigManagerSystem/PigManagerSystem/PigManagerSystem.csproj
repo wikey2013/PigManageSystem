@@ -56,22 +56,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutSystem.cs">
+    <Compile Include="Views\AboutSystem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutSystem.Designer.cs">
+    <Compile Include="Views\AboutSystem.Designer.cs">
       <DependentUpon>AboutSystem.cs</DependentUpon>
     </Compile>
-    <Compile Include="KuCunForm.cs">
+    <Compile Include="Views\KuCunForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KuCunForm.Designer.cs">
+    <Compile Include="Views\KuCunForm.Designer.cs">
       <DependentUpon>KuCunForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIParent1.cs">
@@ -80,60 +80,69 @@
     <Compile Include="MDIParent1.Designer.cs">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MemberForm.cs">
+    <Compile Include="Views\MemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MemberForm.Designer.cs">
+    <Compile Include="Views\MemberForm.Designer.cs">
       <DependentUpon>MemberForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MoneyForm.cs">
+    <Compile Include="Views\MoneyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MoneyForm.Designer.cs">
+    <Compile Include="Views\MoneyForm.Designer.cs">
       <DependentUpon>MoneyForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PigInfoForm.cs">
+    <Compile Include="UserControls\PageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageUserControl.Designer.cs">
+      <DependentUpon>PageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PigInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PigInfoForm.Designer.cs">
+    <Compile Include="Views\PigInfoForm.Designer.cs">
       <DependentUpon>PigInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SellPigForm.cs">
+    <Compile Include="Views\SellPigForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SellPigForm.Designer.cs">
+    <Compile Include="Views\SellPigForm.Designer.cs">
       <DependentUpon>SellPigForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SystemSetingForm.cs">
+    <Compile Include="Views\SystemSetingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SystemSetingForm.Designer.cs">
+    <Compile Include="Views\SystemSetingForm.Designer.cs">
       <DependentUpon>SystemSetingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unity\ConfigHelp.cs" />
     <Compile Include="Unity\ComHelp.cs" />
     <Compile Include="Unity\SqlHelper.cs" />
-    <EmbeddedResource Include="AboutSystem.resx">
+    <EmbeddedResource Include="Views\AboutSystem.resx">
       <DependentUpon>AboutSystem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KuCunForm.resx">
+    <EmbeddedResource Include="Views\KuCunForm.resx">
       <DependentUpon>KuCunForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberForm.resx">
+    <EmbeddedResource Include="Views\MemberForm.resx">
       <DependentUpon>MemberForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MoneyForm.resx">
+    <EmbeddedResource Include="Views\MoneyForm.resx">
       <DependentUpon>MoneyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PigInfoForm.resx">
+    <EmbeddedResource Include="UserControls\PageUserControl.resx">
+      <DependentUpon>PageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PigInfoForm.resx">
       <DependentUpon>PigInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -145,10 +154,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SellPigForm.resx">
+    <EmbeddedResource Include="Views\SellPigForm.resx">
       <DependentUpon>SellPigForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SystemSetingForm.resx">
+    <EmbeddedResource Include="Views\SystemSetingForm.resx">
       <DependentUpon>SystemSetingForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config">
@@ -170,7 +179,9 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\Imgages\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
