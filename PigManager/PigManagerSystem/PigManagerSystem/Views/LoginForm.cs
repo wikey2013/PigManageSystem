@@ -23,9 +23,8 @@ namespace PigManagerSystem
             var dataReader=SqlHelper.UserLogin(userName, pwd);
             if (dataReader!=null)
             {
-                //MainForm mainForm = new MainForm();
-                //mainForm.Show();
-               // this.Close();
+                MDIParent1 mainForm = new MDIParent1();
+                mainForm.Show();
             }
             else
             {
