@@ -113,5 +113,6 @@ namespace PigManagerSystem
         {
             this.txtBoxEarId.Text = "";
         }
+
     }
 }
